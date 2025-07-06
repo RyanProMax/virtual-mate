@@ -1,0 +1,29 @@
+@import '../../styles/common.less';
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(var(--color-rgb-255));
+  overflow: hidden;
+  border-radius: @borderRadius;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    flex: 1;
+    width: 100%;
+    padding: 18px 32px;
+    box-sizing: border-box;
+
+    &-item {
+      font-size: medium;
+
+      &:not(:first-child) {
+        line-height: 1.5;
+        margin-top: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import './reset.less';
+@import './scroll-bar.less';
+
+@font-face {
+  font-family: @font-family;
+  src: url('./fonts/AlimamaFangYuanTiVF-Thin.woff2')format('woff2'),
+    url('./fonts/AlimamaFangYuanTiVF-Thin.woff');
+}
+
+@font-family: 'FangYuanTiVF-Thin';
+@color-primary: rgb(var(--primary-6));
+@color-error: rgb(var(--red-5));
+@color-hover: rgba(22, 22, 22, 0.72);
+@background-color: rgba(var(--color-rgb-255), 0.95);
+@borderRadius: 8px;
+
+body {
+  font-family: @font-family;
+  color: var(--color-text-1);
+  line-height: 1.2;
+  transition: background-color .25s;
+
+  .scroll-bar();
+}
+
+body {
+  --color-rgb-0: 0, 0, 0;
+  --color-rgb-255: 255, 255, 255;
+  --color-rgb-22: 233, 233, 233;
+
+  &[arco-theme='dark'] {
+    --color-rgb-0: 255, 255, 255;
+    --color-rgb-255: 0, 0, 0;
+    --color-rgb-22: 22, 22, 22;
+  }
+}

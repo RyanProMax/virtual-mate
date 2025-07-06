@@ -1,0 +1,27 @@
+{
+  "name": "renderer",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "rspack serve",
+    "build": "rspack build",
+    "analyze": "cross-env rspack build --analyze"
+  },
+  "dependencies": {
+    "@arco-design/web-react": "^2.66.1",
+    "classnames": "^2.5.1",
+    "lodash-es": "^4.17.21",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@arco-plugins/unplugin-react": "2.0.0-beta.5",
+    "@svgr/webpack": "^8.1.0",
+    "@types/lodash-es": "^4.17.12",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "css-loader": "^7.1.2",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "style-loader": "^4.0.0"
+  }
+}
