@@ -6,12 +6,14 @@ import { logger } from '../logger';
 
 import Store from '../store';
 import Windows from '../windows';
+import Service from '../service';
 
 export default class Core {
   logger = logger.scope('Core');
 
   store: Store | null = null;
   windows: Windows | null = null;
+  service: Service | null = null;
 
   async startApp() {
     try {
@@ -39,11 +41,11 @@ export default class Core {
   // run after app-ready
   private async afterAppReady() {
     this.store = new Store();
-
-    // init windows
     this.windows = new Windows(this);
+    this.service = new Service(this);
 
     this.register();
+    await this.service.init();
   }
 
   private register() {
