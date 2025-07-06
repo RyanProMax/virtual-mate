@@ -1,6 +1,6 @@
 {
-  "productName": "ElectronReactRspack",
-  "appId": "ElectronReactRspack",
+  "productName": "VirtualMate",
+  "appId": "VirtualMate",
   "icon": "assets/icons/1024x1024.png",
   "copyright": "Copyright © 2023 by Ryan",
   "files": [
@@ -63,7 +63,7 @@
     {
       "provider": "github",
       "owner": "RyanProMax",
-      "repo": "electron-react-rspack"
+      "repo": "virtual-mate"
     }
   ]
 }
